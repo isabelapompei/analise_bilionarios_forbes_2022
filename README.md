@@ -1,0 +1,1 @@
+# analise_bilionarios_forbe_2022
