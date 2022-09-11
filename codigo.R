@@ -1,16 +1,7 @@
 
 
 #-------------------------------------------------#
-#                                                 #
-#              MARIA ISABELA POMPEI               #
-#           LABORATORIO DE ESTATISTICA            #   
-#                                                 #
-#-------------------------------------------------#
-
-#-------------------------------------------------#
-#                                                 #
 #                  BIBLIOTECAS                    #
-#                                                 #
 #-------------------------------------------------#
 
 #----------Instalando pacotes
@@ -34,27 +25,19 @@ library(scales)
 library(ggpubr)
 #install.packages("forcats")
 library(forcats)
-#install.packages("corrplot")
-library(corrplot)
-library(readr)
-library(tidyverse)
-library(tidyverse)
-install.packages("cluster")
+#install.packages("cluster")
 library(cluster)
-install.packages("dendextend")
+#install.packages("dendextend")
 library(dendextend)
-install.packages("factoextra")
+#install.packages("factoextra")
 library(factoextra) 
-install.packages("gridExtra")
+#install.packages("gridExtra")
 library(gridExtra)
-install.packages("purrr")
+#install.packages("purrr")
 library(purrr)
-library(readxl)
 
 #-------------------------------------------------#
-#                                                 #
 #              LEITURA DE DADOS                   #
-#                                                 #
 #-------------------------------------------------#
 
 #----------Lendo os dados 2022
@@ -96,10 +79,8 @@ View (data2022)
 
        
 #-------------------------------------------------#
-#                                                 #
 #            BILIONARIOS FORBES 2022              #
 #             ANÁLISE EXPLORATORIA                #   
-#                                                 #
 #-------------------------------------------------#
 
 #----------Idade 2022
@@ -222,9 +203,7 @@ gen
 
 
 #-------------------------------------------------#
-#                                                 #
 #              LEITURA DE DADOS                   #
-#                                                 #
 #-------------------------------------------------#
 
 #----------Lendo os dados
@@ -286,9 +265,7 @@ colnames(dados_bilion)
 #10 colunas
 
 #-------------------------------------------------#
-#                                                 #
 #         CRIANDO VARIAVEIS PADRONIZADAS          #
-#                                                 #
 #-------------------------------------------------#
 
 #----------Pontuacao padronizada
@@ -300,12 +277,8 @@ View(dados_bilion_new)
 
 
 #-------------------------------------------------#
-#                                                 #
 #               ANÁLISE DE CLUSTER                #
-#                                                 #
 #-------------------------------------------------#
-
-View(dados_cluster)
 
 dados_cluster = dados_bilion
 dados_cluster$personName = NULL
@@ -354,6 +327,7 @@ G3 <- fviz_cluster(mcdonalds.k4, geom = "point",  data = dados) + ggtitle("k = 4
 G4 <- fviz_cluster(mcdonalds.k5, geom = "point",  data = dados) + ggtitle("k = 5")
 G5 <- fviz_cluster(mcdonalds.k6, geom = "point",  data = dados) + ggtitle("k = 6")
 G6 <- fviz_cluster(mcdonalds.k7, geom = "point",  data = dados) + ggtitle("k = 7")
+
 #Imprimir graficos na mesma tela
 grid.arrange(G1, G2, G3, G4, G5,G6, nrow = 3)
 
@@ -506,13 +480,6 @@ fortuna_grupo5 = hist(grupo5$fortuna,
                       xlab="Fortuna",ylab="Frequência",
                       col=c("#1FA662"))
 
-summary(grupo1$fortuna)
-summary(grupo2$fortuna)
-summary(grupo3$fortuna)
-summary(grupo4$fortuna)
-summary(grupo5$fortuna)
-
-  
 
 #---------- Sexo
 par(mfrow=c(2,3))
