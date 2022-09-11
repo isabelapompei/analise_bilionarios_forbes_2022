@@ -31,3 +31,4 @@ Para a análise, foi utilizado o software estatístico R.
 A partir da apresentação disponível abaixo, podemos verificar os resultados e insights gerados!!!
 
 [analise_bilionarios_forbes_2022.pdf](https://github.com/isabelapompei/analise_bilionarios_forbe_2022/files/9543134/analise_bilionarios_forbes_2022.pdf)
+[analise_bilionarios_forbes_2022.zip](https://github.com/isabelapompei/analise_bilionarios_forbes_2022/files/9543208/analise_bilionarios_forbes_2022.zip)
