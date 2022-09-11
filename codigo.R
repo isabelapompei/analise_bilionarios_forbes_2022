@@ -450,12 +450,6 @@ idade_grupo5 = hist(grupo5$idade,
                     main="Idade Grupo 5",
                     xlab="Idade",ylab="Frequência",
                     col=c("#1FA662"))
-summary(grupo1$idade)
-summary(grupo2$idade)
-summary(grupo3$idade)
-summary(grupo4$idade)
-summary(grupo5$idade)
-
 
 #---------- Histogramas Fortunas
 par(mfrow=c(2,3))
@@ -484,7 +478,7 @@ fortuna_grupo5 = hist(grupo5$fortuna,
 #---------- Sexo
 par(mfrow=c(2,3))
 
-#Grupo 1
+#---------- Grupo 1
 grupo1_genero = ggplot(data = grupo1) +
   geom_bar(aes(x = genero, y = (..count..)/sum(..count..),
                fill = genero),show.legend = F)+
@@ -497,7 +491,7 @@ grupo1_genero
 table(dados_bilion_final$genero)
 table(grupo1$genero) #15% mulher e 84.9% homem
 
-#Grupo 2
+#---------- Grupo 2
 grupo2_genero = ggplot(data = grupo2) +
   geom_bar(aes(x = genero, y = (..count..)/sum(..count..),
                fill = genero),show.legend = F)+
@@ -509,7 +503,7 @@ grupo2_genero = ggplot(data = grupo2) +
 grupo2_genero
 table(grupo2$genero) #12% mulher e homem 88%  %homem
 
-#Grupo 3
+#---------- Grupo 3
 grupo3_genero = ggplot(data = grupo3) +
   geom_bar(aes(x = genero, y = (..count..)/sum(..count..),
                fill = genero),show.legend = F)+
@@ -521,7 +515,7 @@ grupo3_genero = ggplot(data = grupo3) +
 grupo3_genero
 table(grupo3$genero) #10.8% mulher e 89.2% homem
 
-#Grupo 4
+#---------- Grupo 4
 grupo4_genero = ggplot(data = grupo4) +
   geom_bar(aes(x = genero, y = (..count..)/sum(..count..),
                fill = genero),show.legend = F)+
@@ -533,7 +527,7 @@ grupo4_genero = ggplot(data = grupo4) +
 grupo4_genero
 table(grupo4$genero) #14% mulher e 86% homem
 
-#Grupo 5
+#---------- Grupo 5
 grupo5_genero = ggplot(data = grupo5) +
   geom_bar(aes(x = genero, y = (..count..)/sum(..count..),
                fill = genero),show.legend = F)+
@@ -549,7 +543,7 @@ grupo1$self_made
 
 #---------- Self Made
 
-#Grupo 1
+#---------- Grupo 1
 grupo1_selfmade = ggplot(data = grupo1) +
   geom_bar(aes(x = self_made, y = (..count..)/sum(..count..),
                fill = self_made),show.legend = F)+
@@ -562,7 +556,7 @@ grupo1_selfmade = ggplot(data = grupo1) +
 grupo1_selfmade
 table(grupo1$self_made) #36% false e 64% true
 
-#Grupo 2
+#---------- Grupo 2
 grupo2_selfmade = ggplot(data = grupo2) +
   geom_bar(aes(x = self_made, y = (..count..)/sum(..count..),
                fill = self_made),show.legend = F)+
@@ -575,7 +569,7 @@ grupo2_selfmade = ggplot(data = grupo2) +
 grupo2_selfmade
 table(grupo2$self_made) #29%false e 71%true
 
-#Grupo 3
+#---------- Grupo 3
 grupo3_selfmade = ggplot(data = grupo3) +
   geom_bar(aes(x = self_made, y = (..count..)/sum(..count..),
                fill = self_made),show.legend = F)+
@@ -588,7 +582,7 @@ grupo3_selfmade = ggplot(data = grupo3) +
 grupo3_selfmade
 table(grupo3$self_made) #42% false e 58% true 
 
-#Grupo 4
+#---------- Grupo 4
 grupo4_selfmade = ggplot(data = grupo4) +
   geom_bar(aes(x = self_made, y = (..count..)/sum(..count..),
                fill = self_made),show.legend = F)+
@@ -601,7 +595,7 @@ grupo4_selfmade = ggplot(data = grupo4) +
 grupo4_selfmade
 table(grupo4$self_made) #12%true e 88% false
 
-#Grupo 5
+#---------- Grupo 5
 grupo5_selfmade = ggplot(data = grupo5) +
   geom_bar(aes(x = self_made, y = (..count..)/sum(..count..),
                fill = self_made),show.legend = F)+
