@@ -18,8 +18,8 @@ Para atingir tal objetivo, foi realizada uma Análise de Cluster com o objetivo 
 
 ## Dados  🎲
 ------------------------------------------------------------------------------------------
-Os dados utilizados foram retirados do Kaglle - Forbes 2022.
-
+Os dados utilizados foram retirados do Kaglle - Forbes 2022
+Podem ser baixados no seguintes link: https://www.kaggle.com/code/jjasnos/forbes-2022-billionaires/data
 
 ## Ferramentas 🛠️
 ------------------------------------------------------------------------------------------
